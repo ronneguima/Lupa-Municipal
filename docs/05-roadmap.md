@@ -14,10 +14,13 @@ Marque `[x]` ao concluir. Cada fase termina com algo publicável.
 - **Pronto quando:** `pnpm test` passa e o site está no ar.
 
 ## Fase 1 — Um município de ponta a ponta (1–2 semanas)
-- [ ] Tipos do PNCP gerados do OpenAPI
-- [ ] Popular `modalidades` a partir da API de domínio
-- [ ] Descoberta de órgãos de Campos do Jordão (só esfera municipal)
-- [ ] Ingestão de contratações e contratos desde 01/01/2024 (carga inicial + incremental)
+- [x] Tipos do PNCP gerados do OpenAPI (05/10/2026)
+- [x] Reconhecimento da API com fixtures reais (prompt 1.1) — descobertas em docs/02
+- [x] Popular `modalidades` a partir da API de domínio — código e testes
+- [x] Descoberta de órgãos de Campos do Jordão (só esfera municipal) — código e testes
+- [ ] Ingestão de contratações e contratos desde 01/01/2024 (carga inicial + incremental) — código, migration 0002
+      e testes prontos (banco em memória); **falta rodar contra o Supabase** e conferir o resumo
+- [ ] Itens e resultados das contratações diretas (fila) — código e testes prontos; falta rodar
 - [ ] Página `/municipio/3509700` com totais, contratos recentes, top fornecedores
 - [ ] Página `/contrato/[id]` com link para o PNCP
 - [ ] Exportar CSV

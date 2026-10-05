@@ -68,8 +68,11 @@ pnpm lint                # ESLint (bloqueia import do cliente admin em app/ e co
 pnpm typecheck           # next typegen + tsc
 pnpm build               # build de produção
 pnpm ingest:municipios   # IBGE → municipios, marca os 3 monitorados (precisa de .env.local)
+pnpm ingest:pncp -- --municipio 3509700 --desde 2024-01-01            # carga inicial
+pnpm ingest:pncp -- --municipio 3509700 --incremental                 # últimos 3 dias (/atualizacao)
+pnpm ingest:pncp -- --municipio 3509700 --etapas resultados --limite-resultados 300
+#   etapas: contratacoes,contratos,resultados (padrão: todas). Resultados é uma fila: cada execução avança um pedaço.
 # a criar:
-pnpm ingest:pncp -- --municipio 3509700 --desde 2024-01-01
 pnpm ingest:siconfi -- --municipio 3509700 --ano 2025
 pnpm alerts:run -- --municipio 3509700
 ```

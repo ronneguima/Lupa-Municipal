@@ -123,6 +123,12 @@ Para preço unitário, vencedores por item e termos aditivos é outra API (`http
 
 Swagger provável: `https://pncp.gov.br/api/pncp/swagger-ui/index.html` **[VERIFICAR]**.
 
+### Links públicos **[VERIFICAR no navegador]**
+
+`ingest/pncp/normalizar.ts` monta `url_origem` como `https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}` (contratação)
+e `https://pncp.gov.br/app/contratos/{cnpj}/{ano}/{seq}` (contrato). O portal é uma SPA (sempre HTTP 200),
+então só dá para confirmar abrindo alguns links no navegador antes de publicar o site.
+
 ### Armadilhas conhecidas
 
 - Muitos municípios publicam com campos vazios ou valores zerados — nunca gerar alerta a partir de valor nulo.

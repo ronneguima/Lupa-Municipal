@@ -12,7 +12,8 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "ingest:municipios": "tsx --env-file-if-exists=.env.local ingest/run.ts municipios"
+    "ingest:municipios": "tsx --env-file-if-exists=.env.local ingest/run.ts municipios",
+    "ingest:pncp": "tsx --env-file-if-exists=.env.local ingest/run.ts pncp"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
