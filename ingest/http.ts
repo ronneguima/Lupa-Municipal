@@ -9,6 +9,11 @@ export interface OpcoesHttp {
   maxTentativas?: number;
   timeoutMs?: number;
   backoffBaseMs?: number;
+  /**
+   * Espera inicial após HTTP 429 sem Retry-After. O PNCP bloqueia por ~25 s e não manda
+   * Retry-After (medido em 05/10/2026), então o backoff de 429 começa bem mais alto.
+   */
+  backoff429BaseMs?: number;
   contatoEmail?: string;
   // Injetáveis para teste
   fetch?: typeof fetch;
@@ -42,6 +47,7 @@ export function criarClienteHttp(opcoes: OpcoesHttp = {}) {
     maxTentativas = 5,
     timeoutMs = 30_000,
     backoffBaseMs = 1_000,
+    backoff429BaseMs = 30_000,
     contatoEmail = process.env.CONTATO_EMAIL ?? "",
     fetch: fetchImpl = fetch,
     sleep = sleepPadrao,
@@ -62,10 +68,11 @@ export function criarClienteHttp(opcoes: OpcoesHttp = {}) {
     if (slot > t) await sleep(slot - t);
   }
 
-  function atrasoRetry(tentativa: number, retryAfter: string | null): number {
+  function atrasoRetry(tentativa: number, status: number | null, retryAfter: string | null): number {
     const segundos = retryAfter ? Number(retryAfter) : NaN;
     if (Number.isFinite(segundos) && segundos >= 0) return segundos * 1000;
-    const exp = backoffBaseMs * 2 ** (tentativa - 1);
+    const base = status === 429 ? backoff429BaseMs : backoffBaseMs;
+    const exp = base * 2 ** (tentativa - 1);
     return exp + aleatorio() * exp; // jitter: entre 1x e 2x
   }
 
@@ -85,7 +92,7 @@ export function criarClienteHttp(opcoes: OpcoesHttp = {}) {
       } catch (erro) {
         // Erro de rede ou timeout: tenta de novo.
         ultimoErro = erro;
-        if (tentativa < maxTentativas) await sleep(atrasoRetry(tentativa, null));
+        if (tentativa < maxTentativas) await sleep(atrasoRetry(tentativa, null, null));
         continue;
       }
 
@@ -96,7 +103,7 @@ export function criarClienteHttp(opcoes: OpcoesHttp = {}) {
       ultimoErro = new ErroHttp(`HTTP ${resposta.status} em ${url}`, url, resposta.status, corpo);
       if (!deveTentarDeNovo(resposta.status)) throw ultimoErro;
       if (tentativa < maxTentativas) {
-        await sleep(atrasoRetry(tentativa, resposta.headers.get("retry-after")));
+        await sleep(atrasoRetry(tentativa, resposta.status, resposta.headers.get("retry-after")));
       }
     }
 

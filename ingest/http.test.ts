@@ -55,9 +55,9 @@ describe("criarClienteHttp", () => {
     const { c, r } = cliente(f);
     expect(await c.getJson("https://pncp.gov.br/x")).toEqual([]);
     expect(f).toHaveBeenCalledTimes(3);
-    // backoff 1s, 2s (jitter zerado); esperas de rate limit somam o resto
+    // 503 na 1ª tentativa: 1 s. 429 na 2ª: base de 30 s × 2 = 60 s (jitter zerado).
     expect(r.esperas).toContain(1000);
-    expect(r.esperas).toContain(2000);
+    expect(r.esperas).toContain(60_000);
   });
 
   it("respeita Retry-After", async () => {

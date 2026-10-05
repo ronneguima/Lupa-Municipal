@@ -30,8 +30,8 @@ export function mascararCpf(cpf: string): string {
 const CPF_EM_TEXTO = /(?<![\d./-])(?:\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11})(?![\d./-])/g;
 
 /**
- * Mascara CPFs embutidos em texto livre. Caso real do PNCP: MEI com razão social
- * "NEUZA DOS REMEDIOS DE MELO 18967200803" (CPF dentro do nome).
+ * Mascara CPFs embutidos em texto livre. Padrão real do PNCP: MEI com razão social
+ * "NOME DA PESSOA 12345678909" (CPF dentro do nome).
  */
 export function mascararCpfEmTexto(texto: string): string {
   return texto.replace(CPF_EM_TEXTO, (cpf) => mascararCpf(cpf));

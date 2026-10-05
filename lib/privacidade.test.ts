@@ -39,9 +39,9 @@ describe("mascararCpf", () => {
 });
 
 describe("mascararCpfEmTexto", () => {
-  it("mascara CPF embutido em razão social de MEI (caso real do PNCP)", () => {
-    expect(mascararCpfEmTexto("NEUZA DOS REMEDIOS DE MELO 18967200803")).toBe(
-      "NEUZA DOS REMEDIOS DE MELO ***.672.008-**",
+  it("mascara CPF embutido em razão social de MEI (padrão real do PNCP)", () => {
+    expect(mascararCpfEmTexto("MARIA DA SILVA 12345678909")).toBe(
+      "MARIA DA SILVA ***.456.789-**",
     );
   });
 
@@ -60,17 +60,17 @@ describe("mascararCpfEmTexto", () => {
 describe("sanitizarPayload", () => {
   it("percorre objetos e listas", () => {
     const payload = {
-      niFornecedor: "18967200803",
-      nomeRazaoSocialFornecedor: "FULANO 18967200803",
+      niFornecedor: "98765432100",
+      nomeRazaoSocialFornecedor: "FULANO 98765432100",
       valorGlobal: 36000,
-      itens: [{ obs: "cpf 18967200803" }],
+      itens: [{ obs: "cpf 98765432100" }],
       orgaoEntidade: { cnpj: "51623908000192" },
     };
     expect(sanitizarPayload(payload)).toEqual({
-      niFornecedor: "***.672.008-**",
-      nomeRazaoSocialFornecedor: "FULANO ***.672.008-**",
+      niFornecedor: "***.654.321-**",
+      nomeRazaoSocialFornecedor: "FULANO ***.654.321-**",
       valorGlobal: 36000,
-      itens: [{ obs: "cpf ***.672.008-**" }],
+      itens: [{ obs: "cpf ***.654.321-**" }],
       orgaoEntidade: { cnpj: "51623908000192" },
     });
   });

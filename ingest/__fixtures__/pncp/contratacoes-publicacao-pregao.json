@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "orgaoEntidade": {
+        "cnpj": "45699626000176",
+        "razaoSocial": "MUNICIPIO DE CAMPOS DO JORDAO",
+        "poderId": "N",
+        "esferaId": "M"
+      },
+      "valorTotalHomologado": null,
+      "dataInclusao": "2025-01-24T15:17:57",
+      "dataAtualizacao": "2025-01-24T15:17:57",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "Campos do Jordão",
+        "codigoUnidade": "27647",
+        "nomeUnidade": "Prefeitura Municipal da Est. Turística de Campos do Jordão",
+        "codigoIbge": "3509700"
+      },
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "http://www.licitacaocamposdojordao.com.br",
+      "linkProcessoEletronico": null,
+      "justificativaPresencial": null,
+      "anoCompra": 2025,
+      "srp": true,
+      "sequencialCompra": 7,
+      "emendaParlamentar": null,
+      "numeroCompra": "001",
+      "processo": "33699/2024",
+      "objetoCompra": "REGISTRO DE PREÇOS PARA AQUISIÇÃO DE INSUMOS DESTINADOS AOS PACIENTES DO PROGRAMA DE HIPERDIA/DIABETES E HOSPITAL DA SECRETARIA MUNICIPAL DE SAÚDE, conforme especificações, quantidades estimadas e exigências estabelecidas no Termo de Referência deste Edital.",
+      "informacaoComplementar": "",
+      "dataAberturaProposta": "2025-01-24T15:17:56",
+      "dataEncerramentoProposta": "2025-02-07T08:00:00",
+      "dataPublicacaoPncp": "2025-01-24T15:17:57",
+      "dataAtualizacaoGlobal": "2025-01-24T15:17:57",
+      "numeroControlePNCP": "45699626000176-1-000007/2025",
+      "valorTotalEstimado": 1583629.11,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 3,
+      "modoDisputaNome": "Aberto-Fechado",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "BR Conectado"
+    }
+  ],
+  "totalRegistros": 1,
+  "totalPaginas": 1,
+  "numeroPagina": 1,
+  "paginasRestantes": 0,
+  "empty": false
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/45699626000176/compras/2024/20/arquivos/1",
+    "url": "https://pncp.gov.br/pncp-api/v1/orgaos/45699626000176/compras/2024/20/arquivos/1",
+    "statusAtivo": true,
+    "dataPublicacaoPncp": "2024-03-12T10:47:05",
+    "cnpj": "45699626000176",
+    "anoCompra": 2024,
+    "sequencialCompra": 20,
+    "sequencialDocumento": 1,
+    "titulo": "Edital_PE_0032024__Reabertura",
+    "tipoDocumentoNome": "Edital",
+    "tipoDocumentoDescricao": "Edital",
+    "tipoDocumentoId": 2
+  }
+]

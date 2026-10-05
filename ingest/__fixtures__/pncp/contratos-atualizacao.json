@@ -1,0 +1,131 @@
+{
+  "data": [
+    {
+      "numeroControlePncpCompra": "45699626000176-1-000025/2023",
+      "numeroControlePncpAta": null,
+      "codigoPaisFornecedor": "BRA",
+      "orgaoEntidade": {
+        "cnpj": "45699626000176",
+        "razaoSocial": "MUNICIPIO DE CAMPOS DO JORDAO",
+        "poderId": "N",
+        "esferaId": "M"
+      },
+      "anoContrato": 2024,
+      "sequencialContrato": 3,
+      "dataAtualizacao": "2025-09-02T13:16:42",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "Campos do Jordão",
+        "codigoUnidade": "27647",
+        "nomeUnidade": "Prefeitura Municipal da Est. Turística de Campos do Jordão",
+        "codigoIbge": "3509700"
+      },
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "emendaParlamentar": null,
+      "processo": "25.733/2023",
+      "informacaoComplementar": null,
+      "dataPublicacaoPncp": "2025-06-16T09:31:41",
+      "dataAtualizacaoGlobal": "2025-09-02T13:16:42",
+      "receita": false,
+      "numeroParcelas": 1,
+      "numeroRetificacao": 0,
+      "temRemanejamento": null,
+      "frutoAdesao": null,
+      "tipoContrato": {
+        "id": 1,
+        "nome": "Contrato (termo inicial)"
+      },
+      "numeroContratoEmpenho": "001",
+      "tipoPessoa": "PJ",
+      "niFornecedor": "48869035000198",
+      "nomeRazaoSocialFornecedor": "WORKDAY SOLUÇÕES TECNOLÓGICAS E CONSTRUÇÕES LTDA",
+      "numeroControlePNCP": "45699626000176-2-000003/2024",
+      "categoriaProcesso": {
+        "id": 2,
+        "nome": "Compras"
+      },
+      "tipoPessoaSubContratada": null,
+      "niFornecedorSubContratado": null,
+      "nomeFornecedorSubContratado": null,
+      "objetoContrato": "CADASTRO E EXPORTAÇÃO DE INFORMAÇÕES NA PLATAFORMA DIGITAL DE PROCEDIMENTO LICITATÓRIO JÁ CONCLUIDO.  OBJETO: CONTRATAÇÃO DE EMPRESA PARA EXECUÇÃO DE REFORMA PARA MELHORIAS NO CENTRO DE ZOONOSES, LOCALIZADO NA VILA NATAL - MUNICÍPIO DE CAMPOS DO JORDÃO - SP",
+      "valorInicial": 3157.52,
+      "valorParcela": 3157.52,
+      "valorGlobal": 3157.52,
+      "valorAcumulado": null,
+      "dataAssinatura": "2024-01-05",
+      "dataVigenciaInicio": "2024-01-05",
+      "dataVigenciaFim": "2025-01-05",
+      "identificadorCipi": null,
+      "urlCipi": null,
+      "usuarioNome": "BR Conectado"
+    },
+    {
+      "numeroControlePncpCompra": "45699626000176-1-000078/2024",
+      "numeroControlePncpAta": null,
+      "codigoPaisFornecedor": "BRA",
+      "orgaoEntidade": {
+        "cnpj": "45699626000176",
+        "razaoSocial": "MUNICIPIO DE CAMPOS DO JORDAO",
+        "poderId": "N",
+        "esferaId": "M"
+      },
+      "anoContrato": 2025,
+      "sequencialContrato": 6,
+      "dataAtualizacao": "2025-03-14T08:42:26",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "Campos do Jordão",
+        "codigoUnidade": "984",
+        "nomeUnidade": "Campos do Jordão",
+        "codigoIbge": "3509700"
+      },
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "emendaParlamentar": null,
+      "processo": "16469/2024",
+      "informacaoComplementar": "",
+      "dataPublicacaoPncp": "2025-03-14T08:42:20",
+      "dataAtualizacaoGlobal": "2025-09-03T10:42:55",
+      "receita": false,
+      "numeroParcelas": 6,
+      "numeroRetificacao": 0,
+      "temRemanejamento": null,
+      "frutoAdesao": null,
+      "tipoContrato": {
+        "id": 7,
+        "nome": "Empenho"
+      },
+      "numeroContratoEmpenho": "002/2024-1",
+      "tipoPessoa": "PJ",
+      "niFornecedor": "02827211000128",
+      "nomeRazaoSocialFornecedor": "FASUL PAVIMENTAÇÃO E CONSULTORIA",
+      "numeroControlePNCP": "45699626000176-2-000006/2025",
+      "categoriaProcesso": {
+        "id": 7,
+        "nome": "Obras"
+      },
+      "tipoPessoaSubContratada": null,
+      "niFornecedorSubContratado": null,
+      "nomeFornecedorSubContratado": null,
+      "objetoContrato": "CONTRATAÇÃO DE EMPRESA PARA EXECUÇÃO DE REFORMA NO POSTO DE SAÚDE DO MONTE CARLO, NO MUNICIPOIO DE CAMPOS DO JORDÃO - SP.",
+      "valorInicial": 270000,
+      "valorParcela": 45000,
+      "valorGlobal": 270000,
+      "valorAcumulado": null,
+      "dataAssinatura": "2025-02-19",
+      "dataVigenciaInicio": "2025-02-19",
+      "dataVigenciaFim": "2026-02-19",
+      "identificadorCipi": null,
+      "urlCipi": null,
+      "usuarioNome": "Novo BBMNET Licitações"
+    }
+  ],
+  "totalRegistros": 2,
+  "totalPaginas": 1,
+  "numeroPagina": 1,
+  "paginasRestantes": 0,
+  "empty": false
+}
