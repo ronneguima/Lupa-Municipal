@@ -1,0 +1,162 @@
+[
+  {
+    "id": 3500105,
+    "nome": "Adamantina",
+    "microrregiao": {
+      "id": 35035,
+      "nome": "Adamantina",
+      "mesorregiao": {
+        "id": 3508,
+        "nome": "Presidente Prudente",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    },
+    "regiao-imediata": {
+      "id": 350019,
+      "nome": "Adamantina - Lucélia",
+      "regiao-intermediaria": {
+        "id": 3505,
+        "nome": "Presidente Prudente",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 3509700,
+    "nome": "Campos do Jordão",
+    "microrregiao": {
+      "id": 35049,
+      "nome": "Campos do Jordão",
+      "mesorregiao": {
+        "id": 3513,
+        "nome": "Vale do Paraíba Paulista",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    },
+    "regiao-imediata": {
+      "id": 350050,
+      "nome": "Taubaté - Pindamonhangaba",
+      "regiao-intermediaria": {
+        "id": 3511,
+        "nome": "São José dos Campos",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 3548203,
+    "nome": "Santo Antônio do Pinhal",
+    "microrregiao": {
+      "id": 35049,
+      "nome": "Campos do Jordão",
+      "mesorregiao": {
+        "id": 3513,
+        "nome": "Vale do Paraíba Paulista",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    },
+    "regiao-imediata": {
+      "id": 350050,
+      "nome": "Taubaté - Pindamonhangaba",
+      "regiao-intermediaria": {
+        "id": 3511,
+        "nome": "São José dos Campos",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 3548609,
+    "nome": "São Bento do Sapucaí",
+    "microrregiao": {
+      "id": 35049,
+      "nome": "Campos do Jordão",
+      "mesorregiao": {
+        "id": 3513,
+        "nome": "Vale do Paraíba Paulista",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    },
+    "regiao-imediata": {
+      "id": 350050,
+      "nome": "Taubaté - Pindamonhangaba",
+      "regiao-intermediaria": {
+        "id": 3511,
+        "nome": "São José dos Campos",
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,7 @@
+node_modules
+.next
+pnpm-lock.yaml
+ingest/__fixtures__
+docs
+*.md
+supabase
